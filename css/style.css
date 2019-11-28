@@ -1,0 +1,71 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+}
+
+form {
+  width: 288px;
+  margin: 60px auto;
+}
+
+.iberia-text {
+    font-family: 'iberia-text';
+}
+
+.group {
+  position: relative;
+  margin: 60px 0;
+}
+
+input,
+textarea {
+  font-family: iberia-text, sans-serif;
+  color: #333333;
+  font-size: 17px;
+  padding: 25px 14px 6px 15px;
+  width: 288px;
+  height: 56px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #666666;
+  padding: 25px 14px 6px 14px; !important;
+  border-width: 2px;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  padding: 6px 16px 30px 16px;
+  font-size: 13px;
+  color: #666666;
+}
+
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 288px;
+}
+
+label {
+  color: #666666;
+  font-family: iberia-text, sans-serif;
+  font-size: 17px;
+  position: absolute;
+  padding: 16px 16px 20px 16px;
+  pointer-events: none;
+  left: 0px;
+  top: 3px;
+  -webkit-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+}
